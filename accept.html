@@ -1,0 +1,18 @@
+<DOCTYPE! html>
+  <head>
+  </head>
+  <body>
+    <video id="remoteVideo" muted="muted"></video>
+	  <video id="localVideo" muted="muted"></video>
+	  <button id="endCall" onclick="msg()">Send message</button>
+
+    <div id="alice-message-display" class="message-display">
+      <p class="message"><span class="message-from">Bob:</span> <span class="message-body placeholder">No messages yet</span></p>
+    </div>
+
+    <textarea placeholder="Type your message here" id="newMessage"></textarea>
+    <script src="https://rawgit.com/onsip/SIP.js/0.8.0/dist/sip-0.8.0.js"></script>
+    <script src="sip-0.8.0.js"></script>
+    <script src="acceptJs.js"></script>
+  </body>
+</html>
